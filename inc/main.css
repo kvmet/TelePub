@@ -3,12 +3,12 @@
     --line-height: 24px;
     --letter-spacing: 0px;
     --aspect-height: var(--font-size);
-    --aspect-width: calc((var(--aspect-height) * 0.56 ));
+    --aspect-width: 24px;
     --page-rows: 20;
     --page-cols: 40;
     --header-rows: 3;
     --footer-rows: 2;
-    --page-width: calc(var(--page-cols) * var(--aspect-width));
+    --page-width: 576px;
     --page-height: calc(var(--page-rows) * var(--line-height));
     --header-height: calc(var(--header-rows) * var(--line-height));
     --footer-height: calc(var(--footer-rows) * var(--line-height));
