@@ -1,6 +1,22 @@
+:root {
+    --font-size: 24px;
+    --line-height: 24px;
+    --letter-spacing: 0px;
+    --aspect-height: var(--font-size);
+    --aspect-width: calc((var(--aspect-height) * 0.6 ));
+    --page-rows: 20;
+    --page-cols: 40;
+    --header-rows: 3;
+    --footer-rows: 2;
+    --page-width: calc(var(--page-cols) * var(--aspect-width));
+    --page-height: calc(var(--page-rows) * var(--line-height));
+    --header-height: calc(var(--header-rows) * var(--line-height));
+    --footer-height: calc(var(--footer-rows) * var(--line-height));
+}
+
 @font-face {
     font-family: bedstead;
-    src: url(./inc/bedstead.otf);
+    src: url(bedstead.otf);
 }
 
 * {
@@ -9,4 +25,51 @@
 
 body {
   background: #222;
+  color: #ddd;
 }
+
+/* TeleText Colors */
+.tc-bk { color: #000; }
+.tc-bu { color: #00f; }
+.tc-gn { color: #0f0; }
+.tc-cy { color: #0ff; }
+.tc-rd { color: #f00; }
+.tc-mg { color: #f0f; }
+.tc-ye { color: #ff0; }
+.tc-wh { color: #fff; }
+.tb-bk { background: #000; }
+.tb-bu { background: #00f; }
+.tb-gn { background: #0f0; }
+.tb-cy { background: #0ff; }
+.tb-rd { background: #f00; }
+.tb-mg { background: #f0f; }
+.tb-ye { background: #ff0; }
+.tb-wh { background: #fff; }
+
+/* TeleText Page */
+.tt, .tth, .ttf {
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing); 
+    font-size: var(--font-size);
+    font-kerning: none;
+    width: var(--page-width);
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: hidden;
+    white-space: pre-wrap;
+}
+.tt {
+    height: var(--page-height);
+}
+.tth {
+    height: var(--header-height);
+}
+.ttf {
+    height: var(--footer-height);
+}
+
+.tthr {
+
+}
+
+
