@@ -1,3 +1,11 @@
+@font-face {
+    font-family: bedstead;
+    src: url(./inc/bedstead.otf);
+}
+
+* {
+    font-family: bedstead;
+}
 
 body {
   background: #222;
