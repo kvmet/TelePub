@@ -3,7 +3,7 @@
     --line-height: 24px;
     --letter-spacing: 0px;
     --aspect-height: var(--font-size);
-    --aspect-width: calc((var(--aspect-height) * 0.6 ));
+    --aspect-width: calc((var(--aspect-height) * 0.56 ));
     --page-rows: 20;
     --page-cols: 40;
     --header-rows: 3;
