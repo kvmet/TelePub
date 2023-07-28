@@ -8,7 +8,7 @@
     --page-rows: 20;
     --page-cols: 40;
     --footer-rows: 2;
-    --page-width: calc(var(--font-size) * 0.6 * var(--page-cols)); /* font height * 14.4 * page-cols */
+    --page-width: calc(var(--font-size) * 0.75 * var(--page-cols)); /* font height * 14.4 * page-cols */
     --page-height: calc(var(--page-rows) * var(--line-height));
     --header-height: calc(var(--header-rows) * var(--line-height));
     --footer-height: calc(var(--footer-rows) * var(--line-height));
@@ -16,11 +16,11 @@
 
 @font-face {
     font-family: bedstead;
-    src: url(bedstead.otf);
+    src: url(bedstead-extended.otf);
 }
 
 * {
-    font-family: bedstead;
+    font-family: bedstead,Mode7,monospace,courier,fixed;
 }
 
 body {
